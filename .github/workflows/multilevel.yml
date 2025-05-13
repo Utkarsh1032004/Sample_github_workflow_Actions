@@ -1,0 +1,13 @@
+name: "Multi level pipeline"
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    on-push:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "running on main push"
+              run: echo "Running on mater push"
